@@ -30,6 +30,8 @@ p, li, span, label, input, textarea {
 
 a {
   text-decoration: none;
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500;
   color: #17a2b8
 }
 
@@ -186,15 +188,15 @@ h6 { font-size: 16px;}
 }
 
 #blue-mode {
-  background-color: blue;
+  background-color: #192734;
 }
 
 #green-mode {
-  background-color: green;
+  background-color: #78866B;
 }
 
 #purple-mode {
-  background-color: purple;
+  background-color: #7E4C74;
 }
 
 #settings-note {
@@ -257,6 +259,32 @@ h6 { font-size: 16px;}
   left: -5px;
 }
 
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-bottom: 50px;
+  padding-top: 50px;
+  gap: 100px;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--previewShadow);
+}
+
+.social-links {
+  font-size: 25px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+#social_img {
+  width: 150%;
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
@@ -268,7 +296,7 @@ h6 { font-size: 16px;}
 
 @media screen and (max-width: 800px) {
   .intro-wrapper {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     grid-template-areas: 
       "nav-wrapper"
       "left-column"
