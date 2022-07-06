@@ -7,6 +7,8 @@
   --mainText: black;
   --secondaryText:#4b5156;
 
+  --themeDotBorder: #24292E;
+
 }
 
 html, body {
@@ -128,7 +130,8 @@ h6 { font-size: 16px;}
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  margin: 5px;
+  margin: 5px; 
+  border: 2px solid var(--borderColor);
 
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -137,6 +140,8 @@ h6 { font-size: 16px;}
 
 .left-column {
   grid-area: left-column;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #profile-pic {
@@ -147,6 +152,54 @@ h6 { font-size: 16px;}
   width: 200px;
   object-fit: cover;
   border: 2px solid var(--borderColor);
+}
+
+#theme-options-wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+
+.theme-dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+
+  margin: 5px;
+  border: 2px solid var(--themeDotBorder);
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+  cursor: pointer;
+}
+
+.theme-dot:hover {
+  border-width: 5px;
+}
+
+#light-mode {
+  background-color: #fff;
+}
+
+#blue-mode {
+  background-color: blue;
+}
+
+#green-mode {
+  background-color: green;
+}
+
+#purple-mode {
+  background-color: purple;
+}
+
+#settings-note {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
 }
 
 .right-column {
