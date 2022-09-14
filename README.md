@@ -2,5 +2,5 @@
  my portfolio website
 
 
-View in [Github Pages](https://tomcam.github.io/least-github-pages/) or directly on [Github](https://github.com/tomcam/least-github-pages/) 
-* [Your GitHub Pages URL and adding preview to your README.md](/least-github-pages/add-github-pages-preview.html)
+![portfolio-preview](https://user-images.githubusercontent.com/47301396/190225399-6d45119f-ede2-4c76-88b2-5e90d651065c.gif)
+
