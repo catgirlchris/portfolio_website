@@ -3,7 +3,7 @@ let theme = localStorage.getItem('theme')
 
 // local storage to save theme
 if (theme === null) {
-    setTheme('blue')
+    setTheme('pink')
 } else {
     setTheme(theme)
 }
@@ -19,6 +19,10 @@ for (var i = 0; themeDots.length > 1; i++) {
 }
 
 function setTheme(mode) {
+    if (mode == "pink") {
+        document.getElementById("theme-style").href = 'pink.css'
+    }
+
     if (mode == "light") {
         document.getElementById("theme-style").href = 'default.css'
     }

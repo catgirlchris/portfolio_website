@@ -14,6 +14,7 @@
   --buttonColor:black;
 }
 
+
 html, body {
   padding: 0;
   margin: 0;
@@ -56,6 +57,8 @@ h6 { font-size: 16px;}
   background-color: var(--mainColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
+  background: radial-gradient(circle, transparent 20%, var(--backgroundTertiaryColor) 20%, var(--backgroundTertiaryColor) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--backgroundTertiaryColor) 20%, var(--backgroundTertiaryColor) 80%, transparent 80%, transparent) 25px 25px, linear-gradient(var(--backgroundMainColor) 2px, transparent 2px) 0 -1px, linear-gradient(90deg, var(--backgroundMainColor) 2px, var(--backgroundTertiaryColor) 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .s2 {
@@ -207,6 +210,10 @@ h6 { font-size: 16px;}
 
 #purple-mode {
   background-color: #7E4C74;
+}
+
+#pink-mode {
+  background-color: #faaae6;
 }
 
 #settings-note {
